@@ -10,17 +10,17 @@ def prime?(number)
     i = (2..(number - 1)).to_a
     i.each do |divisor|
       if number % divisor == 0
-        false
+        return false
       end
     end
-    return true
+    true
   else
     i = (2..(number - 1)).to_a
     i.each do |divisor|
       if number % divisor == 0
-        false
+        return false
       end
     end
-    return true
+    true
   end
 end
