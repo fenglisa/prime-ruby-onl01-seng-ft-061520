@@ -11,7 +11,7 @@ def prime?(number)
         end
       end
       true
-  elsif number == 1||-1||0
+  elsif number == 1||number == -1||number == 0
     false
   elsif number < -1
     number = number * -1
