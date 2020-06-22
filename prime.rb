@@ -2,25 +2,25 @@ require "pry"
 
 def prime?(number)
   if number == 2
-    true
+    return true
   elsif number == 1||number == -1||number == 0
-    false
+    return false
   elsif number < -1
     number = number * -1
     i = (2..(number - 1)).to_a
     i.each do |divisor|
       if number % divisor == 0
-        false
+        return false
       end
     end
-    true
+    return true
   else
     i = (2..(number - 1)).to_a
     i.each do |divisor|
       if number % divisor == 0
-        false
+        return false
       end
     end
-    true
+    return true
   end
 end
